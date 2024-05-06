@@ -17,7 +17,7 @@ any parameters to the configure script, you can do so on the autogen.sh
 line.  Other than that, installation is pretty much the same as usual:
 
   tar zxvf gmeasures-3.0.tar.gz
-  cd gmeasures-0.7
+  cd gmeasures-3.0
   sh autogen.sh
   make
   make install
