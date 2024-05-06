@@ -1,0 +1,51 @@
+
+gMeasures
+--
+
+2024.05.06 v3.0
+
+* Ported to GTK+3.0
+* config file location moved from $HOME to $XDG_CONFIG_HOME
+
+--
+
+2007.02.02  v0.7
+
+* Ported to GTK+ 2.4.
+* Removed the [Weights&Measures] and [Temperatures] toggle buttons which were 
+  used to select the current mode, and added 3 callbacks to set the mode 
+  depending on which of the 3 entry fields is edited.
+* In the on_editdlg_btn_ok_clicked() callback, added some code to make the 
+  newly-added conversion the current one.
+* Added a [Delete] button to the "Edit/Add" dialog, and added 2 callbacks to 
+  disable the button if the Unit1 or Unit2 entry is edited (in which case, it's 
+  assumed that the user wants to add a conversion).
+
+--
+
+2007.01.18  v0.6
+
+* Removed all calls to GNOME library functions to reduce dependencies.  This 
+  version uses GTK+ 1.2 as the sole GUI toolkit.
+* Removed code to automatically write a configuration file on startup.  In 
+  v0.5, a config file is automatically written if it doesn't already exist.  
+  This version only writes a config file if weights&measures are edited or 
+  added.  Also, since this version doesn't use the GNOME devlib, the config 
+  file is now named ~/.gmeasures.cfg instead of ~/.gnome/gMeasures.
+* Added some documentation.
+
+--
+
+2002.03.26	v0.5
+
+* Ported to GNOME/GTK+.
+
+--
+
+????.??.??	previous versions
+
+* The origin of this program dates back to sometime around 1994-1995.  It was 
+  originally a built-in feature of a larger project called BFW (BinFiler for 
+  Windows).  The first standalone versions for GNU/Linux were written sometime 
+  between 2000 and 2002.
+
